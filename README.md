@@ -1,1 +1,3 @@
-# jpin73
+# Personal GitHub Page
+
+This page will be my portfolio.

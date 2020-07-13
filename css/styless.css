@@ -1,0 +1,77 @@
+:root {
+  --container-bg-color: #D5E5F2;
+  --main-bg-color: #062A40;
+  --h1-color: #3C5973;
+  --p-color: #012340;
+  --h2-color: #687E8C;
+  --font-family: 'Montserrat', sans-serif;
+  --container-width: 80vw;
+  --container-height: 80vh;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--main-bg-color);
+  text-align: center;
+  /* To put container at center */
+  position: relative;
+  height: 100vh;
+}
+
+.container {
+  background-color: var(--container-bg-color);
+  width: var(--container-width);
+  height: var(--container-height);
+  /* Putting container at center */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 1em;
+}
+
+.subcontainer {
+  /* Putting subcontainer at center */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: var(--h1-color);
+}
+
+h2 {
+  color: var(--h2-color);
+}
+
+p {
+  color: var(--p-color);
+}
+
+/* Color Theme Reference (source Adobe Color) */
+
+/* Color Theme Swatches in Hex */
+.US-Military-Might-1-hex { color: #012340; }
+.US-Military-Might-2-hex { color: #3C5973; }
+.US-Military-Might-3-hex { color: #D5E5F2; }
+.US-Military-Might-4-hex { color: #062A40; }
+.US-Military-Might-5-hex { color: #687E8C; }
+
+/* Color Theme Swatches in RGBA */
+.US-Military-Might-1-rgba { color: rgba(1, 34, 63, 1); }
+.US-Military-Might-2-rgba { color: rgba(59, 89, 114, 1); }
+.US-Military-Might-3-rgba { color: rgba(213, 228, 242, 1); }
+.US-Military-Might-4-rgba { color: rgba(5, 41, 63, 1); }
+.US-Military-Might-5-rgba { color: rgba(103, 126, 140, 1); }
+
+/* Color Theme Swatches in HSLA */
+.US-Military-Might-1-hsla { color: hsla(208, 96, 12, 1); }
+.US-Military-Might-2-hsla { color: hsla(208, 31, 34, 1); }
+.US-Military-Might-3-hsla { color: hsla(208, 53, 89, 1); }
+.US-Military-Might-4-hsla { color: hsla(202, 83, 13, 1); }
+.US-Military-Might-5-hsla { color: hsla(202, 14, 47, 1); }
