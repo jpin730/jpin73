@@ -1,47 +1,60 @@
 .contact-me {
   background-color: var(--light-txt-secondary);
-  color: white;
-  height: 150px;
+  color: var(--light-bg-primary);
+  height: var(--height-contact-me);
+}
+
+.contact-me .container-contact-me {
+  height: calc(var(--height-contact-me) - 50px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 0;
 }
 
 .contact-me h2 {
   color: var(--light-bg-primary);
+  margin: 0;
+  padding-top: var(--margin-bottom-section);
 }
 
-.contact-me .form-email input {
-  border-color: gray;
-  border-radius: 5px;
-  border-style: solid;
-  padding: 10px 20px 10px 25px;
-  background-image: url('../images/envelope.svg');
-  background-repeat: no-repeat;
-  background-size: 15px 15px;
-  background-position-y: center;
-  background-position-x: 5px;
+.contact-me .form-email {
+  display: flex;
+  align-items: center;
+}
+
+.contact-me .form-email textarea {
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  outline: none;
 }
 
 .contact-me .form-email button {
-  color: white;
-  display: block;
-  margin-top: 10px;
-  background: transparent;
-  padding: 10px 0;
-  border-radius: 5px;
+  color: var(--light-bg-primary);
   width: 100px;
-  margin-top: 10px;
+  height: 30px;
+  margin-left: 10px;
+  background: transparent;
+  padding-left: 30px;
+  border-radius: 3px;
   border: 1px solid white;
+  cursor: pointer;
+  background-image: url("../img/envelope.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 10px center;
+}
+
+.contact-me .social {
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
 }
 
 .contact-me .social-link {
-  display: inline-block;
   width: 50px;
   height: 50px;
   background-size: 50px 50px;
-  margin: 0 10px;
 }
 
 .contact-me .social-link.twitter {

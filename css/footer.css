@@ -1,18 +1,21 @@
 .footer {
-  color: white;
-  /* background-color: #1b2127; */
-  background-color: #1d252c;
+  font-size: 12px;
+  height: var(--height-footer);  
+  color: var(--light-bg-primary);
+  background-color: var(--light-txt-primary);
   display: flex;
-  align-content: center;
+  align-items: center;
   justify-content: space-between;
-  z-index: 0;
-}
-
-.footer img {
-  vertical-align: middle;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
 }
 
 .footer a {
-  color: white;
+  color: var(--light-bg-primary);
   text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }

@@ -1,8 +1,8 @@
 .header {
-  background-color: var(--light-bg-primary);
+  background-color: var(--light-transparent);
   box-shadow: var(--light-border-card);
   color: var(--light-txt-primary);
-  height: var(--header-height);
+  height: var(--height-header);
   width: 100%;
   position: fixed;
   top: 0;

@@ -1,20 +1,28 @@
 :root {
+  
   /* FONTS */
   --font-family-1: 'Open Sans', sans-serif;
   --font-family-2: 'Fjalla One', sans-serif;
+  
   /* COLORS */
   --light-bg-primary: #ffffff;
   --light-bg-secondary: #eef0f1;
   --light-txt-primary: #08090a;
   --light-txt-secondary: #3b49df;
+  --light-transparent: rgba(255, 255, 255, 0.8);
   --light-border-card: 0 0 0 1px rgba(8, 9, 9, 0.1); /* box-shadow */
+  
   /* SIZES */
-  --container-width: 1000px;
-  --header-height: 50px;
-  --hero-height: 300px;
+  --container-width: 80%;
   --margin-bottom-section: 20px;
+  --width-article: calc(50% - var(--margin-bottom-section)/2);
+  --height-header: 50px;
+  --height-hero: 300px;
+  --height-projects: 400px;
+  --height-achievement: 350px;
+  --height-contact-me: 200px;
+  --height-footer: 40px;
   --border-radius-card: 3px;
-  --size-article: calc((var(--container-width) - var(--margin-bottom-section))/2);
 }
 
 * {
@@ -24,6 +32,7 @@
   text-decoration: none;
   margin: 0;
   padding: 0;
+  z-index: 0;
 }
 
 body {
@@ -35,7 +44,7 @@ h2 {
   text-transform: uppercase;
   font-family: var(--font-family-2);
   font-weight: bold;
-  font-size: 24px;
+  font-size: 25px;
   margin-bottom: var(--margin-bottom-section);
   padding-left: 0;
 }
