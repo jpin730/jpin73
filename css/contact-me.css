@@ -1,0 +1,61 @@
+.contact-me {
+  background-color: var(--light-txt-secondary);
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 0;
+}
+
+.contact-me h2 {
+  color: var(--light-bg-primary);
+}
+
+.contact-me .form-email input {
+  border-color: gray;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 10px 20px 10px 25px;
+  background-image: url('../images/envelope.svg');
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.contact-me .form-email button {
+  color: white;
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  padding: 10px 0;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+  border: 1px solid white;
+}
+
+.contact-me .social-link {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: 50px 50px;
+  margin: 0 10px;
+}
+
+.contact-me .social-link.twitter {
+  background-image: url("../img/twitter.svg");
+}
+
+.contact-me .social-link.facebook {
+  background-image: url('../img/facebook.svg');
+}
+
+.contact-me .social-link.github {
+  background-image: url('../img/github.svg');
+}
+
+.contact-me .social-link.instagram {
+  background-image: url('../img/instagram.svg');
+}

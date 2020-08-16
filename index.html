@@ -3,19 +3,157 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hi! I'm Jaime Pineda</title>
+  <link rel="shortcut icon" href="img/logo.svg" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
-  <link rel="stylesheet" href="css/styless.css">
-  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/career.css">
+  <link rel="stylesheet" href="css/contact-me.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
-<body>
-  <div class="container">
-    <div class="subcontainer">
-      <h1>Hello world!</h1>
-      <h2>Welcome to my page</h2>
-      <p>I'm Jaime Pineda.<br></p>
-      <p>I'm mechatronics engineer and programming enthusiast.</p>
+<body> 
+
+<header class="header">
+  <div class="container-section">
+    <a href="#">
+      <figure class="logo">
+        <img src="img/logo.svg" alt="Jaime Pineda's Logo">
+      </figure>
+    </a>
+    <nav class="menu">
+      <ol>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#career">Career</a>
+        </li>
+        <li>
+          <a href="#contact-me">Contact me</a>
+        </li>
+      </ol>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container-section card">
+    <h1>Hi! I'm <span>Jaime Pineda</span><br/><span>Mechatronics</span> Engineer<br/>Programming <span>Enthusiast</span></h1>
+    <figure>
+      <img src="img/hero.jpg" alt="Hero Image">
+    </figure>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="container-section">
+    <h2>Projects</h2>
+    <div class="container-articles">
+      
+      <article class="project card">
+        <img src="img/project.jpg" alt="">
+        <div class="details card">
+          <h3 class="title">Project title</h3>
+          <ul class="tech-tags">
+            <li>tag</li>
+            <li>tag</li>
+          </ul>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolores, ipsum cum impedit, ducimus earum beatae architecto esse magni odio harum rem sequi adipisci mollitia quasi! Voluptates nesciunt impedit earum.</p>
+          <a class="url-button" href="/">Go to Project</a>
+        </div>
+      </article>
+
+      <article class="project card">
+        <img src="img/project.jpg" alt="">
+        <div class="details card">
+          <h3 class="title">Project title</h3>
+          <ul class="tech-tags">
+            <li>tag</li>
+            <li>tag</li>
+          </ul>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolores, ipsum cum impedit, ducimus earum beatae architecto esse magni odio harum rem sequi adipisci mollitia quasi! Voluptates nesciunt impedit earum.</p>
+          <a class="url-button" href="#">Go to Project</a>
+        </div>
+      </article>
+
+      <article class="project card">
+        <img src="img/project.jpg" alt="">
+        <div class="details card">
+          <h3 class="title">Project title</h3>
+          <ul class="tech-tags">
+            <li>tag</li>
+            <li>tag</li>
+          </ul>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolores, ipsum cum impedit, ducimus earum beatae architecto esse magni odio harum rem sequi adipisci mollitia quasi! Voluptates nesciunt impedit earum.</p>
+          <a class="url-button" href="#">Go to Project</a>
+        </div>
+      </article>
+
+      <article class="project card">
+        <img src="img/project.jpg" alt="">
+        <div class="details card">
+          <h3 class="title">Project title</h3>
+          <ul class="tech-tags">
+            <li>tag</li>
+            <li>tag</li>
+          </ul>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem dolores, ipsum cum impedit, ducimus earum beatae architecto esse magni odio harum rem sequi adipisci mollitia quasi! Voluptates nesciunt impedit earum.</p>
+          <a class="url-button" href="#">Go to Project</a>
+        </div>
+      </article>
+
     </div>
   </div>
+</section>
+
+<section class="career" id="career">
+  <div class="container-section">
+    <h2>Career</h2>
+    <div class="container-articles">
+      
+      <article class="achievement">
+        <div class="details">
+          <h3 class="title">Achievement</h3>
+          <ul class="tech-tags">
+            <li>tag</li>
+            <li>tag</li>
+          </ul>
+          <p class="date"><small><strong>Date:</strong> 01/01/2000</small></p>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium autem illum dolores aperiam laboriosam nulla adipisci asperiores minima quas suscipit magnam, deleniti sunt veniam ratione nesciunt maxime? Nobis, itaque fuga!</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="contact-me" id="contact-me">
+  <div class="container-section">
+    <form action="" class="form-email">
+      <h2>Let's work together</h2>
+      <input type="email" name="" id="" placeholder="Leave me a comment">
+      <button type="submit">Submit</button>
+    </form>
+    <div class="social">
+      <a href="https://twitter.com/jpin730" target="_blank" class="social-link twitter"></a>
+      <a href="https://fb.com/jpin730" target="_blank" class="social-link facebook"></a>
+      <a href="https://github.com/jpin730" target="_blank" class="social-link github"></a>
+      <a href="https://instagram.com/jpin730" target="_blank" class="social-link instagram"></a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container-section">
+    <a href="https://github.com/jpin730/jpin730.github.io" target="_blank">Page Source</a>
+    <p>Jaime Pineda 2020</p>
+  </div>
+</footer>
+
 </body>
 </html>

@@ -1,0 +1,52 @@
+.header {
+  background-color: var(--light-bg-primary);
+  box-shadow: var(--light-border-card);
+  color: var(--light-txt-primary);
+  height: var(--header-height);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+
+.header img {
+  width: 50px;
+  height: 40px;
+  border-radius: 3px;
+  object-fit: contain;
+  background-color: var(--light-txt-primary);
+}
+
+.menu {
+  height: inherit;
+}
+
+.menu ol {
+  display: flex;
+  height: inherit;
+}
+
+.menu ol li {
+  height: inherit;
+}
+
+.menu a {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  color: var(--light-txt-primary);
+  padding: 0 10px;
+}
+
+.menu a {
+  transition: 0.4s;
+  border-bottom: 6px solid transparent;
+}
+
+.menu a:hover {
+  border-color: var(--light-txt-secondary);
+}

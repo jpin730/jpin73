@@ -1,0 +1,18 @@
+.footer {
+  color: white;
+  /* background-color: #1b2127; */
+  background-color: #1d252c;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  z-index: 0;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
