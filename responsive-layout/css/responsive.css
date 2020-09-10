@@ -1,0 +1,330 @@
+@media (max-width: 1250px) {
+  .wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #banner h1 {
+    font-size: 40px;
+  }
+
+  #cards .card {
+    width: 17.6%;
+    margin: 50px 1.5% 20px;
+  }
+
+  #aside #login input[type="submit"],
+  #aside #login input[type="reset"] {
+    width: 40%;
+    margin: 20px 4.5%;
+  }
+
+  #articles {
+    width: 70%;
+  }
+
+  #footer .wrap > div:not(.clearfix) {
+    width: 30%;
+    margin: 40px 1.6%;
+  }
+
+  #footer h5 {
+    font-size: 30px;
+  }
+
+  #footer #browsers img {
+    width: 14%;
+  }
+}
+
+@media (max-width: 1180px) {
+  #cards .card {
+    margin: 30px 1.5% 10px;
+  }
+
+  #cards .card .category {
+    font-size: 17px;
+  }
+
+  #cards .card .description {
+    font-size: 14px;
+  }
+
+  #articles {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1000px) {
+  #banner h1 {
+    width: 100%;
+  }
+  
+  #aside {
+    width: 33%;
+  }
+
+  #aside #search input[type="text"] {
+    width: 84%;
+  }
+
+  #aside .aside-box {
+    width: 95%;
+  }
+}
+
+@media (max-width: 850px) {
+  #aside #login input[type="email"],
+  #aside #login input[type="password"] {
+    width: 80%;
+  }
+
+  #aside #login input[type="submit"] {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+  }
+
+  #aside #login input[type="reset"] {
+    display: none;
+  }
+
+  #aside #login a {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  #cards .card {
+    height: auto;
+  }
+
+  #cards .card .icon {  
+    margin-top: -20px;
+  }
+
+  #cards .card .category {
+    font-size: 15px;
+    margin-top: -20px;
+  }
+  
+  #cards .card .description {
+    display: none;
+  }
+
+  #aside #search input[type="text"] {
+    width: 82%;
+  }
+}
+
+@media (max-width: 730px) {
+  #header {
+    height: auto;
+  }
+
+  #header #logo {
+    float: none;
+    background-clip: content-box;
+    margin: 0 auto 8px;
+    padding-top: 8px;
+  }
+
+  #header #menu {
+    clear: both;
+    float: none;
+    margin: 0 auto;
+    width: 367px;
+  }
+
+  #aside, #articles {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  #aside #search input[type="text"] {
+    width: 93%;
+}
+
+  #aside #login input[type="email"],
+  #aside #login input[type="password"] {
+    width: 90%;
+  }
+
+  #aside #login #user,
+  #aside #login #password {
+    margin-left: 24px;
+  }
+
+  #footer {
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  #footer h5 {
+    font-size: 40px;
+  }
+
+  #footer .wrap > div:not(.clearfix) {
+    float: none;
+    width: 90%;
+    margin: 20px auto 0;
+  }
+
+  #footer #info {
+    height: auto;
+  }
+
+  #footer #info #html img {
+    width: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  #banner h1 {
+    font-size: 35px;
+  }
+
+  #aside #search input[type="text"] {
+    width: 92%;
+  }
+
+  #aside #login #user, #aside #login #password {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  #banner h1 {
+    font-size: 30px;
+  }
+
+  #aside #search input[type="text"] {
+    width: 91%;
+  }
+
+  #aside #login #user, #aside #login #password {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  #banner {
+    height: 105px;
+  }
+  
+  #banner h1 {
+    font-size: 25px;
+  }
+
+  #cards .card .icon {
+    /* margin-top: -20px; */
+    font-size: 35px;
+  }
+
+  #cards .card:hover .icon {
+    font-size: 35px;
+  }
+
+  #cards .card .category {
+    font-size: 12px;
+  }
+
+  #aside #search input[type="text"] {
+    width: 90%;
+  }
+
+  #aside #login input[type="email"],
+  #aside #login input[type="password"] {
+    width: 88%;
+}
+}
+
+@media (max-width: 430px) {
+  #header #menu {
+    height: auto;
+    width: 100%;
+  }
+  
+  #header #menu ul li {
+    display: block;
+    line-height: 50px;
+    margin: 0;
+  }
+
+  #header #menu ul li a {
+    text-align: center;
+  }
+
+  #header #menu ul li a:hover {
+    transform: scale(1,1);
+  }
+
+  #banner {
+    border: 5px solid white;
+  }
+
+  #banner h1 {
+    font-size: 24px;
+    margin: 33px auto;
+  }
+
+  #cards .card {
+    margin: 10px 1.5%;
+  }
+
+  #aside h3 {
+    margin: 15px 0;
+  }
+
+  #aside #search input[type="text"] {
+    width: 88%;
+  }
+
+  #articles article {
+    margin: 20px auto;
+  }
+
+  #articles .data {
+    float: none;
+    margin: -10px -10px 10px;
+    border-radius: 0;
+  }
+  
+  #articles #goToBlog {
+    margin: 30px 0;
+  }
+}
+
+@media (max-width: 380px) {
+  .wrap {
+    width: 95%;
+  }
+
+  #banner {
+    box-sizing: content-box;
+    margin-left: -5px;
+    height: 95px;
+  }
+
+  #cards .card,
+  #cards .card:first-child,
+  #cards .card:nth-child(5) {
+    margin: 10px auto;
+    width: 70%;
+    float: none;
+  }
+
+  #cards .card .category {
+    font-size: 15px;
+  }
+
+  #aside #search input[type="text"] {
+    width: 86%;
+  }
+
+  #aside #login input[type="email"], #aside #login input[type="password"] {
+    width: 85%;
+  }
+}
