@@ -52,3 +52,15 @@ span {
 .text-shadow {
   text-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
 }
+
+.bg-orange {
+background-color: orangered;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+#contact-me {
+  min-height: calc(100vh - 56px);
+}
