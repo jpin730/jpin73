@@ -1,6 +1,32 @@
 :root {
   --color: #674EA7;
-  --font: 'Fjalla One', sans-serif;
+  --fjalla: 'Fjalla One', sans-serif;
+  --open: 'Open Sans', sans-serif;
+}
+
+* {
+  font-family: var(--open);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  min-height: 100vh;
+  padding-top: 61px;
+}
+
+h2 {
+  margin-top: .5rem;
+}
+
+hr {
+  border-width: 3px;
+}
+
+span {
+  font-family: inherit;
 }
 
 .bg-sec {
@@ -8,7 +34,7 @@
 }
 
 .alt-font {
-  font-family: var(--font);
+  font-family: var(--fjalla);
 }
 
 .text-sec {
@@ -19,11 +45,10 @@
   text-transform: uppercase;
 }
 
-html {
-  scroll-behavior: smooth;
+.border-sec {
+  border-color: var(--color);
 }
 
-section {
-  min-height: calc(100vh - 61px);
-  padding-top: 61px;
+.text-shadow {
+  text-shadow: 0 0.5rem 1rem rgba(0,0,0,.15);
 }
