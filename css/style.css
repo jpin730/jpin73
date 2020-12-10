@@ -13,7 +13,6 @@ html {
 }
 
 section {
-  min-height: 100vh;
   padding-top: 61px;
 }
 
@@ -57,10 +56,10 @@ span {
 background-color: orangered;
 }
 
-.bg-yellow {
-  background-color: yellow;
+#hero {
+  height: 100vh;
 }
 
 #contact-me {
-  min-height: calc(100vh - 56px);
+  height: calc(100vh - 56px);
 }
