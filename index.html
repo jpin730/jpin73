@@ -76,110 +76,7 @@
   <section id="projects" class="mb-lg-5">
     <div class="container px-0">
       <h2 class="alt-font text-sec uppercase">Projects</h2>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 card-deck m-0 bg-white border rounded shadow py-3">
-        <article class="col p-0">
-          <div class="card p-0 mb-3 mx-3">
-            <img src="img/projects/bmrecordsv.png" class="card-img-top border-bottom" alt="">
-            <div class="card-body">
-              <h3 class="alt-font card-title mb-0">BMRecords</h3>
-              <p class="card-text mb-0">
-                <span class="badge badge-dark">Freelance</span>
-                <span class="badge badge-dark bg-orange">HTML5</span>
-                <span class="badge badge-primary">CSS3</span>
-                <span class="badge badge-warning">Javascript</span>
-              </p>
-              <p class="card-text mb-0">
-                <small class="text-muted">Oct 2020 - Nov 2020</small>
-              </p>
-              <p class="card-text">Develop a static web page using HTML, CSS (responsive design with media query) and
-                Javascript. Hosted on Firebase with the basic DNS server configuration and adding Open Graph metadata.
-              </p>
-              <a href="https://bmrecordsv.com/" target=”_blank” class="btn btn-dark bg-sec border-sec">Go to page</a>
-            </div>
-          </div>
-        </article>
-        <article class="col p-0">
-          <div class="card p-0 mb-3 mx-3">
-            <img src="img/projects/bootstrap-components.png" class="card-img-top border-bottom" alt="">
-            <div class="card-body">
-              <h3 class="alt-font card-title mb-0">Bootstrap Components</h3>
-              <p class="card-text mb-0">
-                <span class="badge badge-dark">Personal</span>
-                <span class="badge badge-dark bg-orange">HTML5</span>
-                <span class="badge badge-primary">CSS3</span>
-                <span class="badge badge-dark bg-sec">Bootstrap</span>
-              </p>
-              <p class="card-text mb-0">
-                <small class="text-muted">Nov 2020</small>
-              </p>
-              <p class="card-text">Web page layout to demonstrate the main components of Bootstrap 4: alerts, badges,
-                breadcrumbs, buttons, cards, carousel, forms, input groups, jumbotron, modal, navbar, pagination,
-                popover, tooltip and other utilities.</p>
-              <a href="projects/bootstrap-components/" target=”_blank” class="btn btn-dark bg-sec border-sec">Go to
-                page</a>
-            </div>
-          </div>
-        </article>
-        <article class="col p-0">
-          <div class="card p-0 mb-3 mx-3">
-            <img src="img/projects/css-layout.png" class="card-img-top border-bottom" alt="">
-            <div class="card-body">
-              <h3 class="alt-font card-title mb-0">CSS Layout</h3>
-              <p class="card-text mb-0">
-                <span class="badge badge-dark">Personal</span>
-                <span class="badge badge-dark bg-orange">HTML5</span>
-                <span class="badge badge-primary">CSS3</span>
-              </p>
-              <p class="card-text mb-0">
-                <small class="text-muted">Sep 2020</small>
-              </p>
-              <p class="card-text">Website design to demonstrate the main features of CSS3: font import, float,
-                animations, transitions, responsive with media query and many other basic properties.</p>
-              <a href="projects/css-layout/" target=”_blank” class="btn btn-dark bg-sec border-sec">Go to page</a>
-            </div>
-          </div>
-        </article>
-        <article class="col p-0">
-          <div class="card p-0 mb-3 mx-3">
-            <img src="img/projects/simon.png" class="card-img-top border-bottom" alt="">
-            <div class="card-body">
-              <h3 class="alt-font card-title mb-0">Simon Game</h3>
-              <p class="card-text mb-0">
-                <span class="badge badge-dark">Personal</span>
-                <span class="badge badge-dark bg-orange">HTML5</span>
-                <span class="badge badge-primary">CSS3</span>
-                <span class="badge badge-warning">Javascript</span>
-              </p>
-              <p class="card-text mb-0">
-                <small class="text-muted">Aug 2020</small>
-              </p>
-              <p class="card-text">Simon game to apply Javascript to manipulate the properties of HTML elements and
-                develop the logic of the game using this web programming language.</p>
-              <a href="projects/simon/" target=”_blank” class="btn btn-dark bg-sec border-sec">Go to page</a>
-            </div>
-          </div>
-        </article>
-        <article class="col p-0">
-          <div class="card p-0 mb-3 mx-3">
-            <img src="img/projects/portfolio.png" class="card-img-top border-bottom" alt="">
-            <div class="card-body">
-              <h3 class="alt-font card-title mb-0">This Portfolio</h3>
-              <p class="card-text mb-0">
-                <span class="badge badge-dark">Personal</span>
-                <span class="badge badge-dark bg-orange">HTML5</span>
-                <span class="badge badge-primary">CSS3</span>
-                <span class="badge badge-dark bg-sec">Bootstrap</span>
-              </p>
-              <p class="card-text mb-0">
-                <small class="text-muted">Dec 2020</small>
-              </p>
-              <p class="card-text">Portfolio created to show my freelance and personal projects in an organized way. In
-                addition to displaying the certificates and achievements of my career. Layout coded with Bootstrap 4 and
-                detailed with CSS3.</p>
-            </div>
-          </div>
-        </article>
-      </div>
+      <div id="projects-container" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 card-deck m-0 bg-white border rounded shadow py-3"></div>
     </div>
   </section>
 
@@ -394,12 +291,19 @@
     </div>
   </footer>
 
+  <!-- BOOTSTRAP BUNDLE -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
+
+  <!-- DATA PRINTING -->
+  <script src="js/data.js"></script>
+  <script src="js/projects.js"></script>
+
+  <!-- MENU COLLAPSE -->
   <script>
     $('.nav-link').on('click', function () {
       $('.navbar-collapse').collapse('hide');
