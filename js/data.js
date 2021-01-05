@@ -32,6 +32,14 @@ const projects = [
     url: "projects/simon/"
   },
   {
+    img: "img/projects/speech-recognition.png",
+    title: "Speech Recognition",
+    tags: ["Personal", "HTML", "Bootstrap", "JavaScript"],
+    date: "Jan 2021",
+    description: "Personal project usin the Web Kit Speech Recognition and Speech Synthesis APIs.",
+    url: "projects/speech-recognition/"
+  },
+  {
     img: "img/projects/portfolio.png",
     title: "This Portfolio",
     tags: ["Personal", "CSS", "Bootstrap", "JavaScript"],
