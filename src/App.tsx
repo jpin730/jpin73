@@ -1,5 +1,12 @@
 import { FC } from 'react'
+import { Footer, NavBar } from './components'
 
 export const App: FC = () => {
-  return <h1>Jaime Pineda's Portfolio</h1>
+  return (
+    <div className="bg-light">
+      <NavBar />
+      <main className="min-vh-100">Content</main>
+      <Footer />
+    </div>
+  )
 }
