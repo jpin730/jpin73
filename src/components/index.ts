@@ -1,3 +1,5 @@
 export * from './Footer'
 export * from './LoadingBar'
 export * from './NavBar'
+export * from './ProjectCard'
+export * from './ProjectsContainer'

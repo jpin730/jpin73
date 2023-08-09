@@ -1,6 +1,6 @@
 export interface Project {
   id: string
-  createdAt: string
+  created: string
   title: string
   repo: string
   techs: string
