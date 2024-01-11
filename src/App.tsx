@@ -1,5 +1,8 @@
 import { FC, useEffect, useState } from 'react'
-import { Footer, LoadingBar, NavBar, ProjectsContainer } from './components'
+
+import { ProjectsContainer } from './components/ProjectsContainer'
+import { LoadingBar } from './components/LoadingBar'
+import { Hero } from './components/Hero'
 import { getAllProjects } from './services'
 import { Project } from './types'
 
@@ -20,7 +23,7 @@ export const App: FC = () => {
 
   return (
     <div className="bg-light d-flex flex-column justify-content-between min-vh-100">
-      <NavBar />
+      {!loading && <Hero />}
 
       <main className="container flex-grow-1 my-4">
         {loading && <LoadingBar />}
@@ -32,7 +35,20 @@ export const App: FC = () => {
         )}
       </main>
 
-      <Footer />
+      <footer className="bg-dark-subtle">
+        <p className="container m-0 py-3 text-center">
+          <small>
+            My Github profile:{' '}
+            <a
+              className="text-decoration-none"
+              href="https://github.com/jpin730"
+              target="_blank"
+            >
+              https://github.com/jpin730
+            </a>
+          </small>
+        </p>
+      </footer>
     </div>
   )
 }

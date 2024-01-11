@@ -1,6 +1,6 @@
-import { ChangeEvent, FC, useMemo, useState } from 'react'
+import { FC, useMemo, useState } from 'react'
 import { Project } from '../types'
-import { ProjectCard } from '.'
+import { ProjectCard } from './ProjectCard'
 
 interface Props {
   projects: Project[]
@@ -21,30 +21,39 @@ export const ProjectsContainer: FC<Props> = ({ projects }) => {
     techs.includes(filterValue)
   )
 
-  const onFilterChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    setFilterValue(event.target.value)
+  const onFilterChange = (opt: string) => () => {
+    setFilterValue(opt)
   }
 
   return (
-    <>
-      <select
-        className="form-select form-select-lg mb-3"
-        value={filterValue}
-        onChange={onFilterChange}
-      >
-        <option value="">All</option>
+    <section>
+      <div className="mb-3 d-flex flex-wrap">
+        <button
+          className={`btn btn-sm me-2 mb-2 ${
+            filterValue === '' ? 'btn-primary' : 'btn-outline-primary'
+          }`}
+          onClick={onFilterChange('')}
+        >
+          All
+        </button>
         {filterOptions.map((opt) => (
-          <option key={opt} value={opt}>
+          <button
+            key={opt}
+            className={`btn btn-sm me-2 mb-2 ${
+              opt === filterValue ? 'btn-primary' : 'btn-outline-primary'
+            }`}
+            onClick={onFilterChange(opt)}
+          >
             {opt}
-          </option>
+          </button>
         ))}
-      </select>
+      </div>
 
       <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
         {filteredProjects.map(({ id, ...project }) => (
           <ProjectCard key={id} {...project} />
         ))}
       </div>
-    </>
+    </section>
   )
 }

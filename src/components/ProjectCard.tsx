@@ -1,4 +1,5 @@
 import { FC } from 'react'
+
 import { Project } from '../types'
 
 interface Props extends Omit<Project, 'id'> {}
