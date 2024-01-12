@@ -36,7 +36,7 @@ export const App: FC = () => {
       </main>
 
       <footer className="bg-dark-subtle">
-        <p className="container m-0 py-3 text-center">
+        <p className="container my-0 py-3 text-center">
           <small>
             My Github profile:{' '}
             <a
