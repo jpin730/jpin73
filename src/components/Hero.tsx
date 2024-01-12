@@ -3,11 +3,11 @@ import { FC } from 'react'
 export const Hero: FC = () => {
   return (
     <>
-      <nav className="navbar bg-dark mb-3">Portfolio</nav>
+      <nav className="navbar bg-dark mb-5" style={{ height: '40px' }}></nav>
 
       <section className="container">
         <div className="row">
-          <div className="col-12 col-sm-6 align-self-center mb-3">
+          <div className="col-12 col-sm-6 align-self-center mb-3 mb-sm-5">
             <h1>Jaime A. Pineda</h1>
             <p>
               <strong>Web Developer</strong> (Angular | ReactJS | NextJS |
@@ -24,11 +24,12 @@ export const Hero: FC = () => {
               alt="Jaime Pineda's Tech Stack "
             />
           </div>
-          <div className="col-12 col-sm-6 align-self-center mb-3">
+          <div className="col-12 col-sm-6 align-self-center mb-3 mb-sm-5">
             <img
-              className="rounded-circle w-100"
+              className="rounded-circle w-100 mx-auto d-block"
               src="https://github.com/jpin730.png"
               alt="Jaime Pineda's Github avatar"
+              style={{ maxWidth: '300px' }}
             />
           </div>
         </div>
