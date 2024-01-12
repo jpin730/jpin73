@@ -44,7 +44,7 @@ export const App: FC = () => {
               href="https://github.com/jpin730"
               target="_blank"
             >
-              https://github.com/jpin730
+              github.com/jpin730
             </a>
           </small>
         </p>
