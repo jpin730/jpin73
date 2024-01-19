@@ -23,7 +23,9 @@ export const App: FC = () => {
 
   return (
     <div className="bg-light d-flex flex-column justify-content-between min-vh-100">
-      {!loading && <Hero />}
+      <nav className="navbar bg-dark mb-5" style={{ height: '40px' }}></nav>
+
+      <Hero />
 
       <main className="container flex-grow-1 my-4">
         {loading && <LoadingBar />}
