@@ -27,6 +27,9 @@ export const ProjectsContainer: FC<Props> = ({ projects }) => {
 
   return (
     <section>
+      <hr />
+      <h2 className="my-4">Personal Projects</h2>
+
       <div className="mb-3 d-flex flex-wrap">
         <button
           className={`btn btn-sm me-2 mb-2 ${

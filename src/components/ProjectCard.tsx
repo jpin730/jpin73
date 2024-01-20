@@ -21,7 +21,7 @@ export const ProjectCard: FC<Props> = ({
 
   return (
     <div className="col">
-      <div className="bg-white border rounded d-flex flex-column justify-content-between p-3 h-100">
+      <div className="bg-white border rounded shadow-sm d-flex flex-column justify-content-between p-3 h-100">
         <div>
           <h3>{title}</h3>
           <p className="text-secondary text-truncate" title={formattedTechs}>
