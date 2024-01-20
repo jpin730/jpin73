@@ -23,7 +23,7 @@ export const Hero: FC = () => {
         </div>
         <div className="col-12 col-sm-6 align-self-center mb-3 mb-sm-5">
           <img
-            className="rounded-circle w-100 mx-auto d-block"
+            className="rounded-circle border w-100 mx-auto d-block"
             src="https://github.com/jpin730.png"
             alt="Jaime Pineda's Github avatar"
             style={{ maxWidth: '300px' }}

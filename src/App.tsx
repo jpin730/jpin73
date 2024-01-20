@@ -7,6 +7,7 @@ import { getAllProjects } from './services/projects'
 import { Project } from './types'
 import { Footer } from './components/Footer'
 import { ToTop } from './components/ToTop'
+import { Nav } from './components/Nav'
 
 export const App: FC = () => {
   const [projects, setProjects] = useState<Project[]>([])
@@ -29,8 +30,8 @@ export const App: FC = () => {
   }, [])
 
   return (
-    <div className="bg-light d-flex flex-column justify-content-between min-vh-100">
-      <nav className="navbar bg-dark mb-5" style={{ height: '40px' }}></nav>
+    <div className="d-flex flex-column justify-content-between min-vh-100">
+      <Nav />
 
       <Hero />
 
