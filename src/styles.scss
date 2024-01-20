@@ -7,3 +7,12 @@ a.with-external-link-icon {
   background-size: 0.857em;
   padding-right: 1em;
 }
+
+button.to-top {
+  opacity: 0.5;
+  transition: opacity 300ms;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

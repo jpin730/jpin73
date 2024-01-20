@@ -5,20 +5,27 @@ import { LoadingBar } from './components/LoadingBar'
 import { Hero } from './components/Hero'
 import { getAllProjects } from './services'
 import { Project } from './types'
+import { Footer } from './components/Footer'
+import { ToTop } from './components/ToTop'
 
 export const App: FC = () => {
   const [projects, setProjects] = useState<Project[]>([])
   const [loading, setLoading] = useState<boolean>(true)
 
-  useEffect(() => {
+  const fetchProjects = () => {
     getAllProjects()
       .then((res) => {
         res.sort((a, b) => b.created.localeCompare(a.created))
         setProjects(res)
       })
+      .catch(() => setProjects([]))
       .finally(() => {
         setLoading(false)
       })
+  }
+
+  useEffect(() => {
+    fetchProjects()
   }, [])
 
   return (
@@ -30,47 +37,28 @@ export const App: FC = () => {
       <main className="container flex-grow-1 my-4">
         {loading && <LoadingBar />}
 
-        {projects.length === 0 ? (
-          <div className="alert alert-info">No projects available</div>
-        ) : (
-          <ProjectsContainer projects={projects} />
-        )}
+        {!loading &&
+          (projects.length === 0 ? (
+            <>
+              <div className="alert alert-info">No projects available</div>
+              <button
+                className="btn btn-primary d-block mx-auto"
+                onClick={() => {
+                  setLoading(true)
+                  fetchProjects()
+                }}
+              >
+                Reload projects
+              </button>
+            </>
+          ) : (
+            <ProjectsContainer projects={projects} />
+          ))}
       </main>
 
-      <footer className="bg-dark-subtle">
-        <p className="container my-0 py-3 text-center">
-          <a
-            className="text-decoration-none"
-            href="https://github.com/jpin730"
-            target="_blank"
-            rel="noreferrer"
-          >
-            GitHub
-          </a>
+      <Footer />
 
-          <span className="mx-2">&middot;</span>
-
-          <a
-            className="text-decoration-none"
-            href="https://linkedin.com/in/jpin730"
-            target="_blank"
-            rel="noreferrer"
-          >
-            LinkedIn
-          </a>
-
-          <span className="mx-2">&middot;</span>
-
-          <a
-            className="text-decoration-none"
-            href="https://jpin730.github.io/certificates"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Certificates
-          </a>
-        </p>
-      </footer>
+      <ToTop />
     </div>
   )
 }
