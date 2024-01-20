@@ -13,7 +13,9 @@ export const ProjectCard: FC<Props> = ({
   deploy,
 }) => {
   const formattedTechs = techs.split(',').join(' • ')
-  const formattedCreated = new Date(created).toLocaleDateString('en-US', {
+  const formattedCreated = new Date(
+    `${created}T00:00:00.000-06:00`
+  ).toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
@@ -33,11 +35,18 @@ export const ProjectCard: FC<Props> = ({
 
         <div>
           <p className="d-flex gap-2">
-            <a className="" href={deploy} target="_blank">
-              Deployment
+            <a
+              className="with-external-link-icon"
+              href={deploy}
+              target="_blank"
+            >
+              App
             </a>
-            <a className="" href={repo} target="_blank">
-              Repository
+
+            <span>&middot;</span>
+
+            <a className="with-external-link-icon" href={repo} target="_blank">
+              Repo
             </a>
           </p>
           <p className="m-0 text-end">
