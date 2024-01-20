@@ -7,6 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build --outDir docs",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format": "prettier . --write --ignore-unknown",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -30,5 +31,9 @@
     "sass": "^1.64.2",
     "typescript": "^5.0.2",
     "vite": "^4.4.12"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown",
+    "*.{ts,tsx}": "eslint --fix"
   }
 }
