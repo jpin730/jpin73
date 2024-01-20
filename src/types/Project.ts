@@ -6,4 +6,5 @@ export interface Project {
   techs: string
   description: string
   deploy: string
+  image: string
 }

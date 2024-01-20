@@ -11,6 +11,7 @@ export const ProjectCard: FC<Props> = ({
   techs,
   description,
   deploy,
+  image,
 }) => {
   const formattedTechs = techs.split(',').join(' • ')
   const formattedCreated = new Date(
@@ -23,37 +24,43 @@ export const ProjectCard: FC<Props> = ({
 
   return (
     <div className="col">
-      <div className="bg-white border rounded shadow-sm d-flex flex-column justify-content-between p-3 h-100">
-        <div>
-          <h3>{title}</h3>
-          <p className="text-secondary text-truncate" title={formattedTechs}>
-            <small>{formattedTechs}</small>
-          </p>
-        </div>
+      <div className="bg-body border rounded shadow-sm overflow-hidden h-100 d-flex flex-column">
+        <img className="w-100 border-bottom" src={image} alt={title} />
 
-        <p className="flex-grow-1">{description}</p>
+        <div className="d-flex flex-column justify-content-between flex-grow-1 p-3">
+          <div>
+            <h3>{title}</h3>
+            <p className="text-secondary text-truncate" title={formattedTechs}>
+              <small>{formattedTechs}</small>
+            </p>
+            <p className="flex-grow-1">{description}</p>
+          </div>
 
-        <div>
-          <p className="d-flex gap-2">
-            <a
-              className="with-external-link-icon"
-              href={deploy}
-              target="_blank"
-            >
-              App
-            </a>
+          <div>
+            <p className="d-flex gap-2">
+              <a
+                className="with-external-link-icon"
+                href={deploy}
+                target="_blank"
+              >
+                App
+              </a>
+              <span>&middot;</span>
+              <a
+                className="with-external-link-icon"
+                href={repo}
+                target="_blank"
+              >
+                Repo
+              </a>
+            </p>
 
-            <span>&middot;</span>
-
-            <a className="with-external-link-icon" href={repo} target="_blank">
-              Repo
-            </a>
-          </p>
-          <p className="m-0 text-end">
-            <small className="text-secondary">
-              Created: {formattedCreated}
-            </small>
-          </p>
+            <p className="m-0 text-end">
+              <small className="text-secondary">
+                Created: {formattedCreated}
+              </small>
+            </p>
+          </div>
         </div>
       </div>
     </div>
