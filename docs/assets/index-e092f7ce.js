@@ -453,7 +453,7 @@ sa.Fragment = Yv
 sa.jsx = _p
 sa.jsxs = _p
 cp.exports = sa
-var N = cp.exports,
+var x = cp.exports,
   jl = {},
   Ep = { exports: {} },
   it = {},
@@ -526,7 +526,7 @@ var N = cp.exports,
     g = !1,
     _ = !1,
     E = !1,
-    x = typeof setTimeout == 'function' ? setTimeout : null,
+    N = typeof setTimeout == 'function' ? setTimeout : null,
     p = typeof clearTimeout == 'function' ? clearTimeout : null,
     d = typeof setImmediate < 'u' ? setImmediate : null
   typeof navigator < 'u' &&
@@ -612,13 +612,13 @@ var N = cp.exports,
       })
   } else
     ti = function () {
-      x(ei, 0)
+      N(ei, 0)
     }
   function Wa(P) {
     ;(k = P), R || ((R = !0), ti())
   }
   function Ga(P, F) {
-    D = x(function () {
+    D = N(function () {
       P(t.unstable_now())
     }, F)
   }
@@ -3142,7 +3142,7 @@ function hl(t, e, n, r, i) {
             g = md
         }
         var E = (e & 4) !== 0,
-          x = !E && t === 'scroll',
+          N = !E && t === 'scroll',
           p = E ? (f !== null ? f + 'Capture' : null) : f
         E = []
         for (var d = u, m; d !== null; ) {
@@ -3153,7 +3153,7 @@ function hl(t, e, n, r, i) {
               v !== null &&
               ((m = v),
               p !== null && ((v = $i(d, p)), v != null && E.push(Qi(d, v, m)))),
-            x)
+            N)
           )
             break
           d = d.return
@@ -3186,7 +3186,7 @@ function hl(t, e, n, r, i) {
               (g = u),
               (_ = _ ? Nn(_) : null),
               _ !== null &&
-                ((x = Jn(_)), _ !== x || (_.tag !== 5 && _.tag !== 6)) &&
+                ((N = Jn(_)), _ !== N || (_.tag !== 5 && _.tag !== 6)) &&
                 (_ = null))
             : ((g = null), (_ = u)),
           g !== _)
@@ -3201,18 +3201,18 @@ function hl(t, e, n, r, i) {
               (v = 'onPointerLeave'),
               (p = 'onPointerEnter'),
               (d = 'pointer')),
-            (x = g == null ? f : cr(g)),
+            (N = g == null ? f : cr(g)),
             (m = _ == null ? f : cr(_)),
             (f = new E(v, d + 'leave', g, n, c)),
-            (f.target = x),
+            (f.target = N),
             (f.relatedTarget = m),
             (v = null),
             Nn(c) === u &&
               ((E = new E(p, d + 'enter', _, n, c)),
               (E.target = m),
-              (E.relatedTarget = x),
+              (E.relatedTarget = N),
               (v = E)),
-            (x = v),
+            (N = v),
             g && _)
           )
             t: {
@@ -3228,7 +3228,7 @@ function hl(t, e, n, r, i) {
             }
           else E = null
           g !== null && Cd(h, f, g, E, !1),
-            _ !== null && x !== null && Cd(h, x, _, E, !0)
+            _ !== null && N !== null && Cd(h, N, _, E, !0)
         }
       }
       e: {
@@ -4404,7 +4404,7 @@ function Rm(t) {
       A
     )
   }
-  function x(p, d, m, v) {
+  function N(p, d, m, v) {
     if (
       (typeof m == 'object' &&
         m !== null &&
@@ -4480,7 +4480,7 @@ function Rm(t) {
           }
           return o(p)
         case bt:
-          return (R = m._init), x(p, d, R(m._payload), v)
+          return (R = m._init), N(p, d, R(m._payload), v)
       }
       if (pi(m)) return _(p, d, m, v)
       if (ni(m)) return E(p, d, m, v)
@@ -4494,7 +4494,7 @@ function Rm(t) {
         o(p))
       : n(p, d)
   }
-  return x
+  return N
 }
 var Vr = Rm(!0),
   Pm = Rm(!1),
@@ -6543,11 +6543,11 @@ function j0(t, e) {
               case 1:
                 if (_ !== null) {
                   var E = _.memoizedProps,
-                    x = _.memoizedState,
+                    N = _.memoizedState,
                     p = e.stateNode,
                     d = p.getSnapshotBeforeUpdate(
                       e.elementType === e.type ? E : mt(e.type, E),
-                      x
+                      N
                     )
                   p.__reactInternalSnapshotBeforeUpdate = d
                 }
@@ -7702,10 +7702,10 @@ function dg(t, e) {
             l = Error(w(426))
           }
         } else if (ee && a.mode & 1) {
-          var x = Bd(o)
-          if (x !== null) {
-            !(x.flags & 65536) && (x.flags |= 256),
-              Hd(x, o, a, s, e),
+          var N = Bd(o)
+          if (N !== null) {
+            !(N.flags & 65536) && (N.flags |= 256),
+              Hd(N, o, a, s, e),
               Nc(Or(l, a))
             break e
           }
@@ -7934,8 +7934,8 @@ function Sr() {
                 if (E !== null) {
                   _.child = null
                   do {
-                    var x = E.sibling
-                    ;(E.sibling = null), (E = x)
+                    var N = E.sibling
+                    ;(E.sibling = null), (E = N)
                   } while (E !== null)
                 }
               }
@@ -8967,56 +8967,64 @@ const i1 = ({
     techs: r,
     description: i,
     deploy: s,
+    image: o,
   }) => {
-    const o = r.split(',').join(' • '),
-      a = new Date(`${t}T00:00:00.000-06:00`).toLocaleDateString('en-US', {
+    const a = r.split(',').join(' • '),
+      l = new Date(`${t}T00:00:00.000-06:00`).toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
       })
-    return N.jsx('div', {
+    return x.jsx('div', {
       className: 'col',
-      children: N.jsxs('div', {
+      children: x.jsxs('div', {
         className:
-          'bg-white border rounded shadow-sm d-flex flex-column justify-content-between p-3 h-100',
+          'bg-body border rounded shadow-sm overflow-hidden h-100 d-flex flex-column',
         children: [
-          N.jsxs('div', {
+          x.jsx('img', { className: 'w-100 border-bottom', src: o, alt: e }),
+          x.jsxs('div', {
+            className:
+              'd-flex flex-column justify-content-between flex-grow-1 p-3',
             children: [
-              N.jsx('h3', { children: e }),
-              N.jsx('p', {
-                className: 'text-secondary text-truncate',
-                title: o,
-                children: N.jsx('small', { children: o }),
-              }),
-            ],
-          }),
-          N.jsx('p', { className: 'flex-grow-1', children: i }),
-          N.jsxs('div', {
-            children: [
-              N.jsxs('p', {
-                className: 'd-flex gap-2',
+              x.jsxs('div', {
                 children: [
-                  N.jsx('a', {
-                    className: 'with-external-link-icon',
-                    href: s,
-                    target: '_blank',
-                    children: 'App',
+                  x.jsx('h3', { children: e }),
+                  x.jsx('p', {
+                    className: 'text-secondary text-truncate',
+                    title: a,
+                    children: x.jsx('small', { children: a }),
                   }),
-                  N.jsx('span', { children: '·' }),
-                  N.jsx('a', {
-                    className: 'with-external-link-icon',
-                    href: n,
-                    target: '_blank',
-                    children: 'Repo',
-                  }),
+                  x.jsx('p', { className: 'flex-grow-1', children: i }),
                 ],
               }),
-              N.jsx('p', {
-                className: 'm-0 text-end',
-                children: N.jsxs('small', {
-                  className: 'text-secondary',
-                  children: ['Created: ', a],
-                }),
+              x.jsxs('div', {
+                children: [
+                  x.jsxs('p', {
+                    className: 'd-flex gap-2',
+                    children: [
+                      x.jsx('a', {
+                        className: 'with-external-link-icon',
+                        href: s,
+                        target: '_blank',
+                        children: 'App',
+                      }),
+                      x.jsx('span', { children: '·' }),
+                      x.jsx('a', {
+                        className: 'with-external-link-icon',
+                        href: n,
+                        target: '_blank',
+                        children: 'Repo',
+                      }),
+                    ],
+                  }),
+                  x.jsx('p', {
+                    className: 'm-0 text-end',
+                    children: x.jsxs('small', {
+                      className: 'text-secondary',
+                      children: ['Created: ', l],
+                    }),
+                  }),
+                ],
               }),
             ],
           }),
@@ -9037,14 +9045,14 @@ const i1 = ({
       s = (o) => () => {
         n(o)
       }
-    return N.jsxs('section', {
+    return x.jsxs('section', {
       children: [
-        N.jsx('hr', {}),
-        N.jsx('h2', { className: 'my-4', children: 'Personal Projects' }),
-        N.jsxs('div', {
+        x.jsx('hr', {}),
+        x.jsx('h2', { className: 'my-4', children: 'Personal Projects' }),
+        x.jsxs('div', {
           className: 'mb-3 d-flex flex-wrap',
           children: [
-            N.jsx('button', {
+            x.jsx('button', {
               className: `btn btn-sm me-2 mb-2 ${
                 e === '' ? 'btn-primary' : 'btn-outline-primary'
               }`,
@@ -9052,7 +9060,7 @@ const i1 = ({
               children: 'All',
             }),
             r.map((o) =>
-              N.jsx(
+              x.jsx(
                 'button',
                 {
                   className: `btn btn-sm me-2 mb-2 ${
@@ -9066,47 +9074,47 @@ const i1 = ({
             ),
           ],
         }),
-        N.jsx('div', {
+        x.jsx('div', {
           className: 'row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3',
-          children: i.map(({ id: o, ...a }) => N.jsx(i1, { ...a }, o)),
+          children: i.map(({ id: o, ...a }) => x.jsx(i1, { ...a }, o)),
         }),
       ],
     })
   },
   o1 = () =>
-    N.jsx('div', {
+    x.jsx('div', {
       className: 'progress mb-4',
-      children: N.jsx('div', {
+      children: x.jsx('div', {
         className:
           'progress-bar progress-bar-striped progress-bar-animated w-100',
       }),
     }),
   a1 = () =>
-    N.jsx('section', {
+    x.jsx('section', {
       className: 'container',
-      children: N.jsxs('div', {
+      children: x.jsxs('div', {
         className: 'row',
         children: [
-          N.jsxs('div', {
+          x.jsxs('div', {
             className: 'col-12 col-sm-6 align-self-center mb-3 mb-sm-5',
             children: [
-              N.jsx('h1', { children: 'Jaime A. Pineda' }),
-              N.jsxs('p', {
+              x.jsx('h1', { children: 'Jaime A. Pineda' }),
+              x.jsxs('p', {
                 children: [
-                  N.jsx('strong', { children: 'Web Developer' }),
+                  x.jsx('strong', { children: 'Web Developer' }),
                   ' (Angular | ReactJS | NextJS | NodeJS | Express | NestJS) with experience building responsive websites and a strong UX-based approach. I am a passionate self-learner and open-minded to new ways of solving problems. Great emphasis on scalable code and good practices. My work experience stands out in the sport and retail industry as the NBA team “Miami Heat” and Unicomer Group, respectively.',
                 ],
               }),
-              N.jsx('img', {
+              x.jsx('img', {
                 className: 'w-100',
                 src: 'https://skillicons.dev/icons?i=angular,react,nextjs,nodejs,express,nestjs,typescript,javascript&theme=light',
                 alt: "Jaime Pineda's Tech Stack ",
               }),
             ],
           }),
-          N.jsx('div', {
+          x.jsx('div', {
             className: 'col-12 col-sm-6 align-self-center mb-3 mb-sm-5',
-            children: N.jsx('img', {
+            children: x.jsx('img', {
               className: 'rounded-circle w-100 mx-auto d-block',
               src: 'https://github.com/jpin730.png',
               alt: "Jaime Pineda's Github avatar",
@@ -18350,8 +18358,8 @@ function ZT(t) {
         (function (_) {
           return new ta(
             ir(_.field),
-            (function (x) {
-              switch (x) {
+            (function (N) {
+              switch (N) {
                 case 'ASCENDING':
                   return 'asc'
                 case 'DESCENDING':
@@ -20140,9 +20148,9 @@ function SS(t, e) {
           : c.resumeToken.approximateByteSize() > 0 &&
             (g = g.withResumeToken(c.resumeToken, r)),
           (i = i.insert(h, g)),
-          (function (E, x, p) {
+          (function (E, N, p) {
             return E.resumeToken.approximateByteSize() === 0 ||
-              x.snapshotVersion.toMicroseconds() -
+              N.snapshotVersion.toMicroseconds() -
                 E.snapshotVersion.toMicroseconds() >=
                 3e8
               ? !0
@@ -20624,8 +20632,8 @@ class NS extends class {
                   Array.isArray(f) && (f = f[0])
                   const g = f == null ? void 0 : f.error
                   if (g && g.status && g.message) {
-                    const _ = (function (x) {
-                      const p = x.toLowerCase().replace(/_/g, '-')
+                    const _ = (function (N) {
+                      const p = N.toLowerCase().replace(/_/g, '-')
                       return Object.values(T).indexOf(p) >= 0 ? p : T.UNKNOWN
                     })(g.status)
                     a(new V(_, g.message))
@@ -20677,20 +20685,20 @@ class NS extends class {
     let f = !1,
       g = !1
     const _ = new xS({
-        lo: (x) => {
+        lo: (N) => {
           g
-            ? I(Ve, `Not sending because RPC '${e}' stream ${i} is closed:`, x)
+            ? I(Ve, `Not sending because RPC '${e}' stream ${i} is closed:`, N)
             : (f ||
                 (I(Ve, `Opening RPC '${e}' stream ${i} transport.`),
                 h.open(),
                 (f = !0)),
-              I(Ve, `RPC '${e}' stream ${i} sending:`, x),
-              h.send(x))
+              I(Ve, `RPC '${e}' stream ${i} sending:`, N),
+              h.send(N))
         },
         ho: () => h.close(),
       }),
-      E = (x, p, d) => {
-        x.listen(p, (m) => {
+      E = (N, p, d) => {
+        N.listen(p, (m) => {
           try {
             d(m)
           } catch (v) {
@@ -20708,16 +20716,16 @@ class NS extends class {
         g ||
           ((g = !0), I(Ve, `RPC '${e}' stream ${i} transport closed`), _.Vo())
       }),
-      E(h, Zs.EventType.ERROR, (x) => {
+      E(h, Zs.EventType.ERROR, (N) => {
         g ||
           ((g = !0),
-          $r(Ve, `RPC '${e}' stream ${i} transport errored:`, x),
+          $r(Ve, `RPC '${e}' stream ${i} transport errored:`, N),
           _.Vo(new V(T.UNAVAILABLE, 'The operation could not be completed')))
       }),
-      E(h, Zs.EventType.MESSAGE, (x) => {
+      E(h, Zs.EventType.MESSAGE, (N) => {
         var p
         if (!g) {
-          const d = x.data[0]
+          const d = N.data[0]
           pe(!!d)
           const m = d,
             v =
@@ -20741,10 +20749,10 @@ class NS extends class {
           } else I(Ve, `RPC '${e}' stream ${i} received:`, d), _.mo(d)
         }
       }),
-      E(a, $w.STAT_EVENT, (x) => {
-        x.stat === Pf.PROXY
+      E(a, $w.STAT_EVENT, (N) => {
+        N.stat === Pf.PROXY
           ? I(Ve, `RPC '${e}' stream ${i} detected buffering proxy`)
-          : x.stat === Pf.NOPROXY &&
+          : N.stat === Pf.NOPROXY &&
             I(Ve, `RPC '${e}' stream ${i} detected no buffering proxy`)
       }),
       setTimeout(() => {
@@ -21862,21 +21870,21 @@ class GS {
             !!g &&
             (g.hasLocalMutations ||
               (this.mutatedKeys.has(g.key) && g.hasCommittedMutations))
-        let x = !1
+        let N = !1
         f && g
           ? f.data.isEqual(g.data)
-            ? _ !== E && (r.track({ type: 3, doc: g }), (x = !0))
+            ? _ !== E && (r.track({ type: 3, doc: g }), (N = !0))
             : this.Ia(f, g) ||
               (r.track({ type: 2, doc: g }),
-              (x = !0),
+              (N = !0),
               ((l && this.ua(g, l) > 0) || (u && this.ua(g, u) < 0)) &&
                 (a = !0))
           : !f && g
-          ? (r.track({ type: 0, doc: g }), (x = !0))
+          ? (r.track({ type: 0, doc: g }), (N = !0))
           : f &&
             !g &&
-            (r.track({ type: 1, doc: f }), (x = !0), (l || u) && (a = !0)),
-          x &&
+            (r.track({ type: 1, doc: f }), (N = !0), (l || u) && (a = !0)),
+          N &&
             (g
               ? ((o = o.add(g)), (s = E ? s.add(c) : s.delete(c)))
               : ((o = o.delete(c)), (s = s.delete(c))))
@@ -21903,8 +21911,8 @@ class GS {
     o.sort(
       (c, h) =>
         (function (g, _) {
-          const E = (x) => {
-            switch (x) {
+          const E = (N) => {
+            switch (N) {
               case 0:
                 return 1
               case 2:
@@ -22052,16 +22060,16 @@ async function JS(t, e) {
 }
 async function ZS(t, e, n, r, i) {
   t.Ma = (h, f, g) =>
-    (async function (E, x, p, d) {
-      let m = x.view.ha(p)
+    (async function (E, N, p, d) {
+      let m = N.view.ha(p)
       m.Xi &&
-        (m = await Yf(E.localStore, x.query, !1).then(({ documents: k }) =>
-          x.view.ha(k, m)
+        (m = await Yf(E.localStore, N.query, !1).then(({ documents: k }) =>
+          N.view.ha(k, m)
         ))
-      const v = d && d.targetChanges.get(x.targetId),
-        A = d && d.targetMismatches.get(x.targetId) != null,
-        R = x.view.applyChanges(m, E.isPrimaryClient, v, A)
-      return rp(E, x.targetId, R.da), R.snapshot
+      const v = d && d.targetChanges.get(N.targetId),
+        A = d && d.targetMismatches.get(N.targetId) != null,
+        R = N.view.applyChanges(m, E.isPrimaryClient, v, A)
+      return rp(E, N.targetId, R.da), R.snapshot
     })(t, h, f, g)
   const s = await Yf(t.localStore, e, !0),
     o = new GS(e, s.hs),
@@ -23861,28 +23869,28 @@ const OI = {
     return (await DI(t)).docs.map((n) => ({ id: n.id, ...n.data() }))
   },
   jI = () =>
-    N.jsx('footer', {
+    x.jsx('footer', {
       className: 'bg-dark-subtle',
-      children: N.jsxs('p', {
+      children: x.jsxs('p', {
         className: 'container my-0 py-3 text-center',
         children: [
-          N.jsx('a', {
+          x.jsx('a', {
             className: 'text-decoration-none',
             href: 'https://github.com/jpin730',
             target: '_blank',
             rel: 'noreferrer',
             children: 'GitHub',
           }),
-          N.jsx('span', { className: 'mx-2', children: '·' }),
-          N.jsx('a', {
+          x.jsx('span', { className: 'mx-2', children: '·' }),
+          x.jsx('a', {
             className: 'text-decoration-none',
             href: 'https://linkedin.com/in/jpin730',
             target: '_blank',
             rel: 'noreferrer',
             children: 'LinkedIn',
           }),
-          N.jsx('span', { className: 'mx-2', children: '·' }),
-          N.jsx('a', {
+          x.jsx('span', { className: 'mx-2', children: '·' }),
+          x.jsx('a', {
             className: 'text-decoration-none',
             href: 'https://jpin730.github.io/certificates',
             target: '_blank',
@@ -23904,15 +23912,15 @@ const OI = {
           }
         )
       }, []),
-      N.jsx(N.Fragment, {
+      x.jsx(x.Fragment, {
         children:
           t &&
-          N.jsx('button', {
+          x.jsx('button', {
             title: 'Go to top',
             className:
               'to-top btn btn-primary position-fixed bottom-0 end-0 p-3 m-3 m-lg-5 rounded',
             onClick: () => window.scrollTo({ top: 0, behavior: 'smooth' }),
-            children: N.jsx('img', {
+            children: x.jsx('img', {
               loading: 'eager',
               src: '/top-arrow.svg',
               width: '24',
@@ -23940,28 +23948,28 @@ const OI = {
       kt.useEffect(() => {
         i()
       }, []),
-      N.jsxs('div', {
+      x.jsxs('div', {
         className:
           'bg-light d-flex flex-column justify-content-between min-vh-100',
         children: [
-          N.jsx('nav', {
+          x.jsx('nav', {
             className: 'navbar bg-dark mb-5',
             style: { height: '40px' },
           }),
-          N.jsx(a1, {}),
-          N.jsxs('main', {
+          x.jsx(a1, {}),
+          x.jsxs('main', {
             className: 'container flex-grow-1 my-4',
             children: [
-              n && N.jsx(o1, {}),
+              n && x.jsx(o1, {}),
               !n &&
                 (t.length === 0
-                  ? N.jsxs(N.Fragment, {
+                  ? x.jsxs(x.Fragment, {
                       children: [
-                        N.jsx('div', {
+                        x.jsx('div', {
                           className: 'alert alert-info',
                           children: 'No projects available',
                         }),
-                        N.jsx('button', {
+                        x.jsx('button', {
                           className: 'btn btn-primary d-block mx-auto',
                           onClick: () => {
                             r(!0), i()
@@ -23970,15 +23978,15 @@ const OI = {
                         }),
                       ],
                     })
-                  : N.jsx(s1, { projects: t })),
+                  : x.jsx(s1, { projects: t })),
             ],
           }),
-          N.jsx(jI, {}),
-          N.jsx(UI, {}),
+          x.jsx(jI, {}),
+          x.jsx(UI, {}),
         ],
       })
     )
   }
 jl.createRoot(document.getElementById('root')).render(
-  N.jsx(Wv.StrictMode, { children: N.jsx(zI, {}) })
+  x.jsx(Wv.StrictMode, { children: x.jsx(zI, {}) })
 )
