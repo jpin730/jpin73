@@ -25,7 +25,13 @@ export const ProjectCard: FC<Props> = ({
   return (
     <div className="col">
       <div className="bg-body border rounded shadow-sm overflow-hidden h-100 d-flex flex-column">
-        <img className="w-100 border-bottom" src={image} alt={title} />
+        <img
+          loading="lazy"
+          src={image}
+          alt={title}
+          className="w-100 border-bottom"
+          style={{ minHeight: '100px' }}
+        />
 
         <div className="d-flex flex-column justify-content-between flex-grow-1 p-3">
           <div>
