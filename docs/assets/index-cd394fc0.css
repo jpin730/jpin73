@@ -11471,3 +11471,6 @@ button.to-top {
 button.to-top:hover {
   opacity: 0.75;
 }
+p {
+  text-wrap: balance;
+}

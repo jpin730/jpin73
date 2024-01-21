@@ -420,8 +420,8 @@ z.useTransition = function () {
 }
 z.version = '18.2.0'
 hp.exports = z
-var ct = hp.exports
-const Wv = Nv(ct)
+var vt = hp.exports
+const Wv = Nv(vt)
 /**
  * @license React
  * react-jsx-runtime.production.min.js
@@ -430,7 +430,7 @@ const Wv = Nv(ct)
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */ var Gv = ct,
+ */ var Gv = vt,
   bv = Symbol.for('react.element'),
   Yv = Symbol.for('react.fragment'),
   Xv = Object.prototype.hasOwnProperty,
@@ -555,7 +555,7 @@ var A = cp.exports,
     try {
       for (
         m(F), h = n(l);
-        h !== null && (!(h.expirationTime > F) || (k && !pt()));
+        h !== null && (!(h.expirationTime > F) || (k && !ft()));
 
       ) {
         var le = h.callback
@@ -583,7 +583,7 @@ var A = cp.exports,
     D = -1,
     te = 5,
     j = -1
-  function pt() {
+  function ft() {
     return !(t.unstable_now() - j < te)
   }
   function ei() {
@@ -729,7 +729,7 @@ var A = cp.exports,
         k
       )
     }),
-    (t.unstable_shouldYield = pt),
+    (t.unstable_shouldYield = ft),
     (t.unstable_wrapCallback = function (k) {
       var F = f
       return function () {
@@ -753,7 +753,7 @@ var e0 = wp.exports
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
- */ var Sp = ct,
+ */ var Sp = vt,
   nt = e0
 function w(t) {
   for (
@@ -3637,7 +3637,7 @@ function xc(t) {
 var tt = null,
   et = null,
   ee = !1,
-  vt = null
+  yt = null
 function wm(t, e) {
   var n = ut(5, null, null, 0)
   ;(n.elementType = 'DELETED'),
@@ -3757,10 +3757,10 @@ function Dr() {
   ;(et = tt = null), (ee = !1)
 }
 function Nc(t) {
-  vt === null ? (vt = [t]) : vt.push(t)
+  yt === null ? (yt = [t]) : yt.push(t)
 }
 var I_ = Wt.ReactCurrentBatchConfig
-function gt(t, e) {
+function mt(t, e) {
   if (t && t.defaultProps) {
     ;(e = ie({}, e)), (t = t.defaultProps)
     for (var n in t) e[n] === void 0 && (e[n] = t[n])
@@ -3800,7 +3800,7 @@ function Tr(t, e) {
       t.firstContext !== null &&
       (t.lanes & e && (Ge = !0), (t.firstContext = null))
 }
-function dt(t) {
+function ht(t) {
   var e = t._currentValue
   if (Dc !== t)
     if (((t = { context: t, memoizedValue: e, next: null }), pr === null)) {
@@ -4097,7 +4097,7 @@ function Cm(t, e, n) {
     s = e.contextType
   return (
     typeof s == 'object' && s !== null
-      ? (s = dt(s))
+      ? (s = ht(s))
       : ((i = Ye(e) ? Bn : je.current),
         (r = e.contextTypes),
         (s = (r = r != null) ? Nr(t, i) : gn)),
@@ -4126,7 +4126,7 @@ function yu(t, e, n, r) {
   ;(i.props = n), (i.state = t.memoizedState), (i.refs = Am), Mc(t)
   var s = e.contextType
   typeof s == 'object' && s !== null
-    ? (i.context = dt(s))
+    ? (i.context = ht(s))
     : ((s = Ye(e) ? Bn : je.current), (i.context = Nr(t, s))),
     (i.state = t.memoizedState),
     (s = e.getDerivedStateFromProps),
@@ -4352,8 +4352,8 @@ function Rm(t) {
           (P = te))
     return (
       t &&
-        x.forEach(function (pt) {
-          return e(p, pt)
+        x.forEach(function (ft) {
+          return e(p, ft)
         }),
       ee && Rn(p, D),
       C
@@ -4369,15 +4369,15 @@ function Rm(t) {
       D++, j = m.next()
     ) {
       x.index > D ? ((te = x), (x = null)) : (te = x.sibling)
-      var pt = f(p, x, j.value, v)
-      if (pt === null) {
+      var ft = f(p, x, j.value, v)
+      if (ft === null) {
         x === null && (x = te)
         break
       }
-      t && x && pt.alternate === null && e(p, x),
-        (d = s(pt, d, D)),
-        P === null ? (C = pt) : (P.sibling = pt),
-        (P = pt),
+      t && x && ft.alternate === null && e(p, x),
+        (d = s(ft, d, D)),
+        P === null ? (C = ft) : (P.sibling = ft),
+        (P = ft),
         (x = te)
     }
     if (j.done) return n(p, x), ee && Rn(p, D), C
@@ -4627,7 +4627,7 @@ function It() {
   }
   return Ee === null ? (re.memoizedState = Ee = t) : (Ee = Ee.next = t), Ee
 }
-function ft() {
+function dt() {
   if (me === null) {
     var t = re.alternate
     t = t !== null ? t.memoizedState : null
@@ -4652,7 +4652,7 @@ function Yi(t, e) {
   return typeof e == 'function' ? e(t) : e
 }
 function gl(t) {
-  var e = ft(),
+  var e = dt(),
     n = e.queue
   if (n === null) throw Error(w(311))
   n.lastRenderedReducer = t
@@ -4713,7 +4713,7 @@ function gl(t) {
   return [e.memoizedState, n.dispatch]
 }
 function yl(t) {
-  var e = ft(),
+  var e = dt(),
     n = e.queue
   if (n === null) throw Error(w(311))
   n.lastRenderedReducer = t
@@ -4735,7 +4735,7 @@ function yl(t) {
 function xm() {}
 function Nm(t, e) {
   var n = re,
-    r = ft(),
+    r = dt(),
     i = e(),
     s = !wt(r.memoizedState, i)
   if (
@@ -4820,7 +4820,7 @@ function Xi(t, e, n, r) {
   )
 }
 function Fm() {
-  return ft().memoizedState
+  return dt().memoizedState
 }
 function ho(t, e, n, r) {
   var i = It()
@@ -4828,7 +4828,7 @@ function ho(t, e, n, r) {
     (i.memoizedState = Xi(1 | e, n, void 0, r === void 0 ? null : r))
 }
 function fa(t, e, n, r) {
-  var i = ft()
+  var i = dt()
   r = r === void 0 ? null : r
   var s = void 0
   if (me !== null) {
@@ -4877,7 +4877,7 @@ function zm(t, e, n) {
 }
 function qc() {}
 function Bm(t, e) {
-  var n = ft()
+  var n = dt()
   e = e === void 0 ? null : e
   var r = n.memoizedState
   return r !== null && e !== null && Uc(e, r[1])
@@ -4885,7 +4885,7 @@ function Bm(t, e) {
     : ((n.memoizedState = [t, e]), t)
 }
 function Hm(t, e) {
-  var n = ft()
+  var n = dt()
   e = e === void 0 ? null : e
   var r = n.memoizedState
   return r !== null && e !== null && Uc(e, r[1])
@@ -4910,7 +4910,7 @@ function C_(t, e) {
   }
 }
 function Qm() {
-  return ft().memoizedState
+  return dt().memoizedState
 }
 function R_(t, e, n) {
   var r = cn(t)
@@ -4975,7 +4975,7 @@ function Gm(t, e, n) {
   }
 }
 var $o = {
-    readContext: dt,
+    readContext: ht,
     useCallback: Ne,
     useContext: Ne,
     useEffect: Ne,
@@ -4995,11 +4995,11 @@ var $o = {
     unstable_isNewReconciler: !1,
   },
   k_ = {
-    readContext: dt,
+    readContext: ht,
     useCallback: function (t, e) {
       return (It().memoizedState = [t, e === void 0 ? null : e]), t
     },
-    useContext: dt,
+    useContext: ht,
     useEffect: Ud,
     useImperativeHandle: function (t, e, n) {
       return (
@@ -5089,9 +5089,9 @@ var $o = {
     unstable_isNewReconciler: !1,
   },
   x_ = {
-    readContext: dt,
+    readContext: ht,
     useCallback: Bm,
-    useContext: dt,
+    useContext: ht,
     useEffect: Hc,
     useImperativeHandle: zm,
     useInsertionEffect: $m,
@@ -5104,12 +5104,12 @@ var $o = {
     },
     useDebugValue: qc,
     useDeferredValue: function (t) {
-      var e = ft()
+      var e = dt()
       return qm(e, me.memoizedState, t)
     },
     useTransition: function () {
       var t = gl(Yi)[0],
-        e = ft().memoizedState
+        e = dt().memoizedState
       return [t, e]
     },
     useMutableSource: xm,
@@ -5118,9 +5118,9 @@ var $o = {
     unstable_isNewReconciler: !1,
   },
   N_ = {
-    readContext: dt,
+    readContext: ht,
     useCallback: Bm,
-    useContext: dt,
+    useContext: ht,
     useEffect: Hc,
     useImperativeHandle: zm,
     useInsertionEffect: $m,
@@ -5133,12 +5133,12 @@ var $o = {
     },
     useDebugValue: qc,
     useDeferredValue: function (t) {
-      var e = ft()
+      var e = dt()
       return me === null ? (e.memoizedState = t) : qm(e, me.memoizedState, t)
     },
     useTransition: function () {
       var t = yl(Yi)[0],
-        e = ft().memoizedState
+        e = dt().memoizedState
       return [t, e]
     },
     useMutableSource: xm,
@@ -5378,7 +5378,7 @@ function Kd(t, e, n, r, i) {
     var l = o.context,
       u = n.contextType
     typeof u == 'object' && u !== null
-      ? (u = dt(u))
+      ? (u = ht(u))
       : ((u = Ye(n) ? Bn : je.current), (u = Nr(e, u)))
     var c = n.getDerivedStateFromProps,
       h =
@@ -5416,13 +5416,13 @@ function Kd(t, e, n, r, i) {
     ;(o = e.stateNode),
       Im(t, e),
       (a = e.memoizedProps),
-      (u = e.type === e.elementType ? a : gt(e.type, a)),
+      (u = e.type === e.elementType ? a : mt(e.type, a)),
       (o.props = u),
       (h = e.pendingProps),
       (f = o.context),
       (l = n.contextType),
       typeof l == 'object' && l !== null
-        ? (l = dt(l))
+        ? (l = ht(l))
         : ((l = Ye(n) ? Bn : je.current), (l = Nr(e, l)))
     var g = n.getDerivedStateFromProps
     ;(c =
@@ -5690,7 +5690,7 @@ function L_(t, e, n, r, i, s, o) {
       (et = an(i.nextSibling)),
       (tt = e),
       (ee = !0),
-      (vt = null),
+      (yt = null),
       t !== null &&
         ((ot[at++] = $t),
         (ot[at++] = jt),
@@ -6019,7 +6019,7 @@ function M_(t, e, n) {
             ? (e.flags |= 4)
             : t === null ||
               (t.memoizedState.isDehydrated && !(e.flags & 256)) ||
-              ((e.flags |= 1024), vt !== null && (Nu(vt), (vt = null)))),
+              ((e.flags |= 1024), yt !== null && (Nu(yt), (yt = null)))),
         Su(t, e),
         De(e),
         null
@@ -6277,7 +6277,7 @@ function M_(t, e, n) {
           } else
             Dr(), !(e.flags & 128) && (e.memoizedState = null), (e.flags |= 4)
           De(e), (s = !1)
-        } else vt !== null && (Nu(vt), (vt = null)), (s = !0)
+        } else yt !== null && (Nu(yt), (yt = null)), (s = !0)
         if (!s) return e.flags & 65536 ? e : null
       }
       return e.flags & 128
@@ -6546,7 +6546,7 @@ function j_(t, e) {
                     N = _.memoizedState,
                     p = e.stateNode,
                     d = p.getSnapshotBeforeUpdate(
-                      e.elementType === e.type ? E : gt(e.type, E),
+                      e.elementType === e.type ? E : mt(e.type, E),
                       N
                     )
                   p.__reactInternalSnapshotBeforeUpdate = d
@@ -6683,7 +6683,7 @@ function Ru(t, e, n) {
     for (Ru(t, e, n), t = t.sibling; t !== null; ) Ru(t, e, n), (t = t.sibling)
 }
 var Ie = null,
-  yt = !1
+  gt = !1
 function Gt(t, e, n) {
   for (n = n.child; n !== null; ) lg(t, e, n), (n = n.sibling)
 }
@@ -6697,13 +6697,13 @@ function lg(t, e, n) {
       Oe || mr(n, e)
     case 6:
       var r = Ie,
-        i = yt
+        i = gt
       ;(Ie = null),
         Gt(t, e, n),
         (Ie = r),
-        (yt = i),
+        (gt = i),
         Ie !== null &&
-          (yt
+          (gt
             ? ((t = Ie),
               (n = n.stateNode),
               t.nodeType === 8 ? t.parentNode.removeChild(n) : t.removeChild(n))
@@ -6711,7 +6711,7 @@ function lg(t, e, n) {
       break
     case 18:
       Ie !== null &&
-        (yt
+        (gt
           ? ((t = Ie),
             (n = n.stateNode),
             t.nodeType === 8
@@ -6722,12 +6722,12 @@ function lg(t, e, n) {
       break
     case 4:
       ;(r = Ie),
-        (i = yt),
+        (i = gt),
         (Ie = n.stateNode.containerInfo),
-        (yt = !0),
+        (gt = !0),
         Gt(t, e, n),
         (Ie = r),
-        (yt = i)
+        (gt = i)
       break
     case 0:
     case 11:
@@ -6788,7 +6788,7 @@ function Xd(t) {
       })
   }
 }
-function mt(t, e) {
+function pt(t, e) {
   var n = e.deletions
   if (n !== null)
     for (var r = 0; r < n.length; r++) {
@@ -6800,19 +6800,19 @@ function mt(t, e) {
         e: for (; a !== null; ) {
           switch (a.tag) {
             case 5:
-              ;(Ie = a.stateNode), (yt = !1)
+              ;(Ie = a.stateNode), (gt = !1)
               break e
             case 3:
-              ;(Ie = a.stateNode.containerInfo), (yt = !0)
+              ;(Ie = a.stateNode.containerInfo), (gt = !0)
               break e
             case 4:
-              ;(Ie = a.stateNode.containerInfo), (yt = !0)
+              ;(Ie = a.stateNode.containerInfo), (gt = !0)
               break e
           }
           a = a.return
         }
         if (Ie === null) throw Error(w(160))
-        lg(s, o, i), (Ie = null), (yt = !1)
+        lg(s, o, i), (Ie = null), (gt = !1)
         var l = i.alternate
         l !== null && (l.return = null), (i.return = null)
       } catch (u) {
@@ -6830,7 +6830,7 @@ function ug(t, e) {
     case 11:
     case 14:
     case 15:
-      if ((mt(e, t), St(t), r & 4)) {
+      if ((pt(e, t), St(t), r & 4)) {
         try {
           Ri(3, t, t.return), pa(3, t)
         } catch (E) {
@@ -6844,11 +6844,11 @@ function ug(t, e) {
       }
       break
     case 1:
-      mt(e, t), St(t), r & 512 && n !== null && mr(n, n.return)
+      pt(e, t), St(t), r & 512 && n !== null && mr(n, n.return)
       break
     case 5:
       if (
-        (mt(e, t),
+        (pt(e, t),
         St(t),
         r & 512 && n !== null && mr(n, n.return),
         t.flags & 32)
@@ -6906,7 +6906,7 @@ function ug(t, e) {
       }
       break
     case 6:
-      if ((mt(e, t), St(t), r & 4)) {
+      if ((pt(e, t), St(t), r & 4)) {
         if (t.stateNode === null) throw Error(w(162))
         ;(i = t.stateNode), (s = t.memoizedProps)
         try {
@@ -6918,7 +6918,7 @@ function ug(t, e) {
       break
     case 3:
       if (
-        (mt(e, t), St(t), r & 4 && n !== null && n.memoizedState.isDehydrated)
+        (pt(e, t), St(t), r & 4 && n !== null && n.memoizedState.isDehydrated)
       )
         try {
           zi(e.containerInfo)
@@ -6927,10 +6927,10 @@ function ug(t, e) {
         }
       break
     case 4:
-      mt(e, t), St(t)
+      pt(e, t), St(t)
       break
     case 13:
-      mt(e, t),
+      pt(e, t),
         St(t),
         (i = t.child),
         i.flags & 8192 &&
@@ -6944,7 +6944,7 @@ function ug(t, e) {
     case 22:
       if (
         ((c = n !== null && n.memoizedState !== null),
-        t.mode & 1 ? ((Oe = (u = Oe) || c), mt(e, t), (Oe = u)) : mt(e, t),
+        t.mode & 1 ? ((Oe = (u = Oe) || c), pt(e, t), (Oe = u)) : pt(e, t),
         St(t),
         r & 8192)
       ) {
@@ -7037,12 +7037,12 @@ function ug(t, e) {
       }
       break
     case 19:
-      mt(e, t), St(t), r & 4 && Xd(t)
+      pt(e, t), St(t), r & 4 && Xd(t)
       break
     case 21:
       break
     default:
-      mt(e, t), St(t)
+      pt(e, t), St(t)
   }
 }
 function St(t) {
@@ -7134,7 +7134,7 @@ function Jd(t) {
                   var i =
                     e.elementType === e.type
                       ? n.memoizedProps
-                      : gt(e.type, n.memoizedProps)
+                      : mt(e.type, n.memoizedProps)
                   r.componentDidUpdate(
                     i,
                     n.memoizedState,
@@ -7292,7 +7292,7 @@ function ef(t) {
 var z_ = Math.ceil,
   jo = Wt.ReactCurrentDispatcher,
   Kc = Wt.ReactCurrentOwner,
-  ht = Wt.ReactCurrentBatchConfig,
+  ct = Wt.ReactCurrentBatchConfig,
   Q = 0,
   we = null,
   fe = null,
@@ -7568,12 +7568,12 @@ function Kn(t) {
   en !== null && en.tag === 0 && !(Q & 6) && Sr()
   var e = Q
   Q |= 1
-  var n = ht.transition,
+  var n = ct.transition,
     r = G
   try {
-    if (((ht.transition = null), (G = 1), t)) return t()
+    if (((ct.transition = null), (G = 1), t)) return t()
   } finally {
-    ;(G = r), (ht.transition = n), (Q = e), !(Q & 6) && Tn()
+    ;(G = r), (ct.transition = n), (Q = e), !(Q & 6) && Tn()
   }
 }
 function Yc() {
@@ -7814,11 +7814,11 @@ function mg(t) {
 }
 function Pn(t, e, n) {
   var r = G,
-    i = ht.transition
+    i = ct.transition
   try {
-    ;(ht.transition = null), (G = 1), Q_(t, e, n, r)
+    ;(ct.transition = null), (G = 1), Q_(t, e, n, r)
   } finally {
-    ;(ht.transition = i), (G = r)
+    ;(ct.transition = i), (G = r)
   }
   return null
 }
@@ -7845,7 +7845,7 @@ function Q_(t, e, n, r) {
     (s = (n.flags & 15990) !== 0),
     n.subtreeFlags & 15990 || s)
   ) {
-    ;(s = ht.transition), (ht.transition = null)
+    ;(s = ct.transition), (ct.transition = null)
     var o = G
     G = 1
     var a = Q
@@ -7861,7 +7861,7 @@ function Q_(t, e, n, r) {
       g0(),
       (Q = a),
       (G = o),
-      (ht.transition = s)
+      (ct.transition = s)
   } else t.current = n
   if (
     (Ws && ((Ws = !1), (en = t), (zo = i)),
@@ -7885,10 +7885,10 @@ function Q_(t, e, n, r) {
 function Sr() {
   if (en !== null) {
     var t = Gp(zo),
-      e = ht.transition,
+      e = ct.transition,
       n = G
     try {
-      if (((ht.transition = null), (G = 16 > t ? 16 : t), en === null))
+      if (((ct.transition = null), (G = 16 > t ? 16 : t), en === null))
         var r = !1
       else {
         if (((t = en), (en = null), (zo = 0), Q & 6)) throw Error(w(331))
@@ -8000,7 +8000,7 @@ function Sr() {
       }
       return r
     } finally {
-      ;(G = n), (ht.transition = e)
+      ;(G = n), (ct.transition = e)
     }
   }
   return !1
@@ -8125,7 +8125,7 @@ yg = function (t, e, n) {
           (r = i(r._payload)),
           (e.type = r),
           (i = e.tag = Y_(r)),
-          (t = gt(r, t)),
+          (t = mt(r, t)),
           i)
         ) {
           case 0:
@@ -8138,7 +8138,7 @@ yg = function (t, e, n) {
             e = qd(null, e, r, t, n)
             break e
           case 14:
-            e = Qd(null, e, r, gt(r.type, t), n)
+            e = Qd(null, e, r, mt(r.type, t), n)
             break e
         }
         throw Error(w(306, r, ''))
@@ -8148,14 +8148,14 @@ yg = function (t, e, n) {
       return (
         (r = e.type),
         (i = e.pendingProps),
-        (i = e.elementType === r ? i : gt(r, i)),
+        (i = e.elementType === r ? i : mt(r, i)),
         _u(t, e, r, i, n)
       )
     case 1:
       return (
         (r = e.type),
         (i = e.pendingProps),
-        (i = e.elementType === r ? i : gt(r, i)),
+        (i = e.elementType === r ? i : mt(r, i)),
         Kd(t, e, r, i, n)
       )
     case 3:
@@ -8190,7 +8190,7 @@ yg = function (t, e, n) {
               et = an(e.stateNode.containerInfo.firstChild),
                 tt = e,
                 ee = !0,
-                vt = null,
+                yt = null,
                 n = Pm(e, null, r, n),
                 e.child = n;
               n;
@@ -8235,7 +8235,7 @@ yg = function (t, e, n) {
       return (
         (r = e.type),
         (i = e.pendingProps),
-        (i = e.elementType === r ? i : gt(r, i)),
+        (i = e.elementType === r ? i : mt(r, i)),
         qd(t, e, r, i, n)
       )
     case 7:
@@ -8320,7 +8320,7 @@ yg = function (t, e, n) {
         (i = e.type),
         (r = e.pendingProps.children),
         Tr(e, n),
-        (i = dt(i)),
+        (i = ht(i)),
         (r = r(i)),
         (e.flags |= 1),
         ze(t, e, r, n),
@@ -8329,8 +8329,8 @@ yg = function (t, e, n) {
     case 14:
       return (
         (r = e.type),
-        (i = gt(r, e.pendingProps)),
-        (i = gt(r.type, i)),
+        (i = mt(r, e.pendingProps)),
+        (i = mt(r.type, i)),
         Qd(t, e, r, i, n)
       )
     case 15:
@@ -8339,7 +8339,7 @@ yg = function (t, e, n) {
       return (
         (r = e.type),
         (i = e.pendingProps),
-        (i = e.elementType === r ? i : gt(r, i)),
+        (i = e.elementType === r ? i : mt(r, i)),
         fo(t, e),
         (e.tag = 1),
         Ye(r) ? ((t = !0), xo(e)) : (t = !1),
@@ -8981,7 +8981,13 @@ const i1 = ({
         className:
           'bg-body border rounded shadow-sm overflow-hidden h-100 d-flex flex-column',
         children: [
-          A.jsx('img', { className: 'w-100 border-bottom', src: o, alt: e }),
+          A.jsx('img', {
+            loading: 'lazy',
+            src: o,
+            alt: e,
+            className: 'w-100 border-bottom',
+            style: { minHeight: '100px' },
+          }),
           A.jsxs('div', {
             className:
               'd-flex flex-column justify-content-between flex-grow-1 p-3',
@@ -9033,8 +9039,8 @@ const i1 = ({
     })
   },
   s1 = ({ projects: t }) => {
-    const [e, n] = ct.useState(''),
-      r = ct.useMemo(
+    const [e, n] = vt.useState(''),
+      r = vt.useMemo(
         () =>
           [...new Set(t.flatMap(({ techs: o }) => o.split(',')))].sort((o, a) =>
             o.localeCompare(a)
@@ -9102,7 +9108,7 @@ const i1 = ({
               A.jsxs('p', {
                 children: [
                   A.jsx('strong', { children: 'Web Developer' }),
-                  ' (Angular | ReactJS | NextJS | NodeJS | Express | NestJS) with experience building responsive websites and a strong UX-based approach. I am a passionate self-learner and open-minded to new ways of solving problems. Great emphasis on scalable code and good practices. My work experience stands out in the sport and retail industry as the NBA team “Miami Heat” and Unicomer Group, respectively.',
+                  'with experience building responsive websites and a strong UX-based approach. I am a passionate self-learner and open-minded to new ways of solving problems. Great emphasis on scalable code and good practices. My work experience stands out in the sport and retail industry as the NBA team “Miami Heat” and Unicomer Group, respectively.',
                 ],
               }),
               A.jsx('img', {
@@ -23901,9 +23907,9 @@ const OI = {
       }),
     }),
   UI = () => {
-    const [t, e] = ct.useState(!1)
+    const [t, e] = vt.useState(!1)
     return (
-      ct.useEffect(() => {
+      vt.useEffect(() => {
         const n = () => e(window.scrollY / window.screen.height > 0.5)
         return (
           window.addEventListener('scroll', n),
@@ -23932,97 +23938,95 @@ const OI = {
     )
   },
   zI = () => {
-    const [t, e] = ct.useState(!0),
-      n = (i) => {
-        i
-          ? (e(!0),
-            document.documentElement.setAttribute('data-bs-theme', 'dark'))
-          : (e(!1),
-            document.documentElement.setAttribute('data-bs-theme', 'light'))
+    const t = (i) => {
+        document.documentElement.setAttribute('data-bs-theme', i),
+          localStorage.setItem('theme', i)
       },
+      [e, n] = vt.useState(() => {
+        const i = localStorage.getItem('theme')
+        if (i && (i === 'dark' || i === 'light')) return t(i), i
+        const s = window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light'
+        return t(s), s
+      }),
       r = () => {
-        n(!t)
+        const i = e === 'dark' ? 'light' : 'dark'
+        n(i), t(i)
       }
-    return (
-      ct.useEffect(() => {
-        e(() => {
-          const i = window.matchMedia('(prefers-color-scheme: dark)').matches
-          return n(i), i
-        })
-      }, []),
-      A.jsx('nav', {
-        className: `navbar position-sticky top-0 mb-5 z-1 ${
-          t ? 'bg-black' : 'bg-dark'
-        }`,
-        children: A.jsxs('div', {
-          className: 'container',
-          children: [
-            A.jsxs('div', {
-              className: 'd-flex gap-3',
-              children: [
-                A.jsx('a', {
-                  target: '_blank',
-                  rel: 'noreferrer',
-                  className: 'text-light',
-                  href: 'https://github.com/jpin730',
-                  children: A.jsx('svg', {
-                    width: '16',
-                    height: '16',
-                    fill: 'currentColor',
-                    viewBox: '0 0 16 16',
-                    children: A.jsx('path', {
-                      d: 'M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8',
-                    }),
+    return A.jsx('nav', {
+      className: `navbar position-sticky top-0 mb-5 z-1 ${
+        e === 'dark' ? 'bg-black' : 'bg-dark'
+      }`,
+      children: A.jsxs('div', {
+        className: 'container',
+        children: [
+          A.jsxs('div', {
+            className: 'd-flex gap-3',
+            children: [
+              A.jsx('a', {
+                target: '_blank',
+                rel: 'noreferrer',
+                className: 'text-light',
+                href: 'https://github.com/jpin730',
+                children: A.jsx('svg', {
+                  width: '20',
+                  height: '20',
+                  fill: 'currentColor',
+                  viewBox: '0 0 16 16',
+                  children: A.jsx('path', {
+                    d: 'M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8',
                   }),
                 }),
-                A.jsx('a', {
-                  target: '_blank',
-                  rel: 'noreferrer',
-                  className: 'text-light',
-                  href: 'https://linkedin.com/in/jpin730',
-                  children: A.jsx('svg', {
-                    width: '16',
-                    height: '16',
-                    fill: 'currentColor',
-                    viewBox: '0 0 16 16',
-                    children: A.jsx('path', {
-                      d: 'M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z',
-                    }),
+              }),
+              A.jsx('a', {
+                target: '_blank',
+                rel: 'noreferrer',
+                className: 'text-light',
+                href: 'https://linkedin.com/in/jpin730',
+                children: A.jsx('svg', {
+                  width: '20',
+                  height: '20',
+                  fill: 'currentColor',
+                  viewBox: '0 0 16 16',
+                  children: A.jsx('path', {
+                    d: 'M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z',
                   }),
                 }),
-              ],
-            }),
-            A.jsx('button', {
-              className: 'btn btn-transparent text-light',
-              onClick: r,
-              children: t
+              }),
+            ],
+          }),
+          A.jsx('button', {
+            className: 'btn btn-transparent btn-large text-light',
+            onClick: r,
+            children:
+              e === 'dark'
                 ? A.jsx('svg', {
-                    width: '16',
-                    height: '16',
-                    fill: 'currentColor',
-                    viewBox: '0 0 16 16',
-                    children: A.jsx('path', {
-                      d: 'M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708',
-                    }),
-                  })
-                : A.jsx('svg', {
-                    width: '16',
-                    height: '16',
+                    width: '20',
+                    height: '20',
                     viewBox: '0 0 16 16',
                     fill: 'currentcolor',
                     children: A.jsx('path', {
                       d: 'M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278',
                     }),
+                  })
+                : A.jsx('svg', {
+                    width: '20',
+                    height: '20',
+                    fill: 'currentColor',
+                    viewBox: '0 0 16 16',
+                    children: A.jsx('path', {
+                      d: 'M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708',
+                    }),
                   }),
-            }),
-          ],
-        }),
-      })
-    )
+          }),
+        ],
+      }),
+    })
   },
   BI = () => {
-    const [t, e] = ct.useState([]),
-      [n, r] = ct.useState(!0),
+    const [t, e] = vt.useState([]),
+      [n, r] = vt.useState(!0),
       i = () => {
         $I()
           .then((s) => {
@@ -24034,7 +24038,7 @@ const OI = {
           })
       }
     return (
-      ct.useEffect(() => {
+      vt.useEffect(() => {
         i()
       }, []),
       A.jsxs('div', {
