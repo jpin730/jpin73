@@ -44,21 +44,25 @@ export const ProjectCard: FC<Props> = ({
 
           <div>
             <p className="d-flex gap-2">
-              <a
-                className="with-external-link-icon"
-                href={deploy}
-                target="_blank"
-              >
-                App
-              </a>
-              <span>&middot;</span>
-              <a
-                className="with-external-link-icon"
-                href={repo}
-                target="_blank"
-              >
-                Repo
-              </a>
+              {deploy && (
+                <a
+                  className="with-external-link-icon"
+                  href={deploy}
+                  target="_blank"
+                >
+                  App
+                </a>
+              )}
+              {deploy && repo && <span>&middot;</span>}
+              {repo && (
+                <a
+                  className="with-external-link-icon"
+                  href={repo}
+                  target="_blank"
+                >
+                  Repo
+                </a>
+              )}
             </p>
 
             <p className="m-0 text-end">
