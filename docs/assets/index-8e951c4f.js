@@ -9008,19 +9008,21 @@ const i1 = ({
                   A.jsxs('p', {
                     className: 'd-flex gap-2',
                     children: [
-                      A.jsx('a', {
-                        className: 'with-external-link-icon',
-                        href: s,
-                        target: '_blank',
-                        children: 'App',
-                      }),
-                      A.jsx('span', { children: '·' }),
-                      A.jsx('a', {
-                        className: 'with-external-link-icon',
-                        href: n,
-                        target: '_blank',
-                        children: 'Repo',
-                      }),
+                      s &&
+                        A.jsx('a', {
+                          className: 'with-external-link-icon',
+                          href: s,
+                          target: '_blank',
+                          children: 'App',
+                        }),
+                      s && n && A.jsx('span', { children: '·' }),
+                      n &&
+                        A.jsx('a', {
+                          className: 'with-external-link-icon',
+                          href: n,
+                          target: '_blank',
+                          children: 'Repo',
+                        }),
                     ],
                   }),
                   A.jsx('p', {
