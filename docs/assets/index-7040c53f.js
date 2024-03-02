@@ -8985,8 +8985,8 @@ const i1 = ({
             loading: 'lazy',
             src: o,
             alt: e,
-            className: 'w-100 border-bottom',
-            style: { minHeight: '100px' },
+            className: 'w-100 border-bottom object-fit-cover',
+            style: { aspectRatio: 2 },
           }),
           A.jsxs('div', {
             className:
