@@ -29,8 +29,8 @@ export const ProjectCard: FC<Props> = ({
           loading="lazy"
           src={image}
           alt={title}
-          className="w-100 border-bottom"
-          style={{ minHeight: '100px' }}
+          className="w-100 border-bottom object-fit-cover"
+          style={{ aspectRatio: 2 }}
         />
 
         <div className="d-flex flex-column justify-content-between flex-grow-1 p-3">
