@@ -16,7 +16,7 @@ export const Hero: FC = () => {
           </p>
           <img
             className="w-100"
-            src="https://skillicons.dev/icons?i=angular,react,nextjs,nodejs,express,nestjs,typescript,javascript&theme=light"
+            src="https://skillicons.dev/icons?i=angular,react,nextjs,nodejs,express,nestjs,typescript,javascript,spring,java&theme=light"
             alt="Jaime Pineda's Tech Stack "
           />
         </div>
