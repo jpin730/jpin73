@@ -2,8 +2,6 @@
 
 This page is my portfolio. Made with Vite + React + Bootstrap.
 
-<https://jpin730.github.io>
-
 ## How to use
 
 Install nvm and run `nvm use` to use the correct node version.
